@@ -1,0 +1,605 @@
+/*!-------Inicio cabecera --------->*/
+*
+{
+    margin: 2.0px;
+    padding: 2.0px;
+}
+
+
+.body{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.containere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+/*!-------------------------------------------------------------------------->*/
+
+
+
+/*!-------------------------------------------------------------------------->*/
+/*!---- Inicio video Fondo de pantalla  ----->*/
+
+video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/*!---- Final video Fondo de pantalla  ----->*/
+/*!-------------------------------------------------------------------------->*/
+
+
+
+/*!------------------------------------------------------------>*/
+  /*!---- Inicial Reproductor y PALA-PT ----->*/
+.home .flexy {
+    width: 100%;
+    margin: 10px auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  /*!---- Final Reproductor y PALA-PT ----->*/
+  /*!----------------------------------------------------------->*/
+
+
+/*!---------------------inicio Donacion y Me gusta ----------------------------------------------->*/
+    /*!---- 03 - Inicio Aside  Donate->*/
+asideimg-3 {
+    width: 55%;
+    max-height: 650px;
+    height: 180px;
+    border: 1px auto;
+    display: flex;
+    display: block;
+    
+    color: white;
+    float: left;
+    margin: 60px 60px;
+    align-items: flex-end;
+}
+    /*!---- 03 -Final Aside  Donate->*/
+/*!-------------------------------------------------------------------------->*/
+/*!-------------------------------------------------------------------------->*/
+/*!---- 05 --- Inicio Aside del me gusta ------>*/
+asideimg-5 {
+    width: 30%;
+    max-height: 1300px;
+    height: 230px;
+    border: 1px auto;
+    display: flex;
+    display: block;
+
+    color: white;
+    float: left;
+    margin: 5px 5px;
+    align-items: flex-end;
+}
+    /*!---- 05 -- Final Aside de me gusta ---->*/
+
+.fb-root {
+        width: 420px;
+        display: block;
+}
+/*!------------------- Final Donacion y Me gusta ---------------------->
+
+
+
+
+/*!-------------------------------------------------------------------------->*/
+/*!---- -inicio venta  Splide ------>*/
+.containero {
+    max-width: 100%;
+    width: 1200px;
+    max-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 170%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+}
+
+.splide__slide img{
+    height: 285px;
+    position: absolute;
+    max-width: 100%;
+    border-radius: 15px 15px;
+    cursor: pointer;
+}
+/*!------ Final venta  Splide ------>*/
+/*!-------------------------------------------------------------------------->*/
+
+
+
+
+    /*!--------- INICIO DEL RELOJ e HISTORIA --------------->*/
+    /*!---- 02 --- Inicio Aside Reloj->*/
+asideimg-2 {
+    max-height: 100%;
+    height: 370px;
+    max-width: 100%;
+    width: 455px;
+       
+    position: relative;
+    display: flex;
+    float: left;
+    align-items: center;
+    flex-direction: column;
+}
+        /*!---- 02 --- Final Aside Reloj->*/
+/*!---- 08 --- Inicio Aside  historia ------>*/
+asideimg-8 {
+    max-height: 100%;
+    height: 250px;
+    max-width: 100%;
+    width: 55%;
+    margin: 60px 60px;
+
+    position: relative;
+    display: flex;
+    float: left;
+    align-items: center;
+    flex-direction: column;
+}
+    /*!---- 05 -- Final Aside historia ---->*/
+/*!------------------- FINAL DEL RELOJ e HISTORIA ---------------------->
+
+
+
+
+/*!-------------------------------------------------------------------------->*/
+
+/*!------ Inicio el Mundo Gira ------>*/
+*
+section 
+{
+    transform-style: preserve-3d;
+}
+
+.tierra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 260px;
+    background: url(../IMAGENES/image.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgb(0, 0, 0), 0 0 50px #4069ff;
+    animation: animateEarth 15s linear infinite;
+}
+
+@keyframes animateEarth {
+    0% { 
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -750px 0;
+    }
+}
+
+.circle {
+    transform-style: preserve-3d;
+    animation: animateText 10s linear infinite;
+}
+
+.circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #c3b000;
+    color: #000;
+    font-size: 1.2em;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    padding: 7px 10px;
+    transform: rotateY(calc(var(--i) * calc(360deg / 36))) translateZ(200px);
+    border-top: 4px solid #35146f;
+    border-bottom: 4px solid #35146f;
+}
+
+.circle span::before {
+    content: '';
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-5px);
+}
+
+@keyframes animateText {
+    0% {
+        transform: perspective(1000px) rotateY(360deg) rotateX(15deg) translateY(-30px);
+    }
+    100% { 
+        transform: perspective(1000px) rotateY(0deg) rotateX(15deg) translateY(-30px);
+     }
+ }
+/*!------ Final Final el mundo GIRA ------->*/
+
+
+
+/*!-------------------------------------------------------------------------->*/
+
+/*!---- Inicio de Artesanias ------>*/
+.mochila-container {
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    margin: 10px 10px;
+}
+
+      /*!-------->*/
+.mochila {
+    width: 14%;
+    background-color: hwb(69 33% 29%);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 3px;
+}
+
+.mochila img {
+    width: 94%;
+    height: 100px;
+}
+
+.mochila-content {
+    padding: 6px;
+}
+
+.mochila-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.mochila-content p{
+    color: #000;
+    font-size: 15px;
+    line-height: 2.5;
+}
+
+.mochila-content .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+/*!---- Final artesanias ------>*/
+
+/*!-------------- -------------------------------------------------------------------->*/
+
+
+
+
+/*!-------------------------------------------------------------------------->*/
+/*!---- 00 - Inicio Aside Buscanos--->*/
+aside {
+    width: 30%;
+    max-height: 350px;
+    height: 200px;
+    border: 1px auto;
+    display: flex;
+    display: block;
+
+    color: white;
+    float: left;
+    margin: 5px 5px;
+    align-items: flex-start;
+}
+  /*!---- 01 Final Aside Buscanos------->*/
+/*!-------------------------------------------------------------------------->*/
+
+
+
+    
+
+/*!-------------------------------------------------------------------------->*/
+  /*!---- Inicio  CONTENEDOR DE COLUMNAS ----->*/
+
+  .contenedor {
+    width: 145%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+  /*!-------->*/
+  .nav {
+    width: 100%;
+    height: 80px;
+    border: 1px auto;
+
+    color: white;
+    float: center;
+    margin: 5px 0 0 0;
+    display: flex;
+
+}
+  /*!-------->*/
+
+.header {
+    width: 100%;
+    height: 120px;
+    border: 1px auto;
+    color: #000;
+    float: left;
+    border-radius: 10px 10px 0 0;
+}
+
+/*!----  Inicio Las OPCIONES---->*/
+.opciones {
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.opciones li {
+   float: center;
+   list-style: none;
+   display: flex;
+   float: right;
+}
+
+.opciones li a {
+    color: #000;
+    padding: 2px 2px;
+    text-decoration: none;
+    display: flex;
+    position: center;
+ }
+  /*!-------->*/
+ .opciones li a:hover {
+    color: white;
+    background: #00ff24;
+    border-radius: 10px;
+    display: flex;
+ }
+/*!----  Final  Las OPCIONES---->*/
+/*!-------------------------------------------------------------------------->*/
+
+/*!-------------------------------------------------------------------------->*/
+section {
+    width: 68%;
+    max-width: 1100;
+    height: 50px;
+    color: #000;
+    float: left;
+    border-radius: 5px 0 0 0;
+}
+
+.contenido img {
+    float: left;
+    padding: 5px;
+    display: flex;
+    width: 50%;
+    height: 303px;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+}
+
+.contenido p{
+    padding: 10px; 
+}
+legend{
+    margin-top: 15px;
+    color: red;
+    text-align: center;
+}
+hr {
+    width: 380px;
+    margin: auto;
+}
+
+/*!---- Inicio Aside Coolumnas ----->*/
+.lateral {
+    float: left;
+    padding: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+/*!---- Final Aside Coolumnas ----->*/
+  /*!----------- Final  CONTENEDOR DE COLUMNAS ------------>*/
+/*!----------------------------------------------------------------------------------------------->*/
+
+
+
+
+/*!----------------------------------------------------------------------------------------------->*/
+
+/*!-------------- Inicio Parrafo Marquee------------->*/
+.parrafo1 marquee{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+    
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo2 marquee{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo3 marquee{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo1{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo2{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo3{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+/*!-----------  Final Parrafo marqueeee -------------->*/
+/*!---------------------------------------------------------------------------------------->*/
+
+
+  /*!------ Inicio Instrumentos tropicales ----------->*/
+.containere {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.containere .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 300px;
+    max-height: 100%;
+    height: 300px;
+    border-radius: 15px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    background-color: #f006e8;
+    transition: 0.3s ease-in-out;
+}
+.containere .card:hover {
+    height: 480px;
+}
+
+.containere .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 180px;
+    top: -60px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #00ff24;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.containere .card .imgBx img {
+    max-width: 100%;
+    width: 99%;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+    background-color: #f006e8;
+}
+
+.containere .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;;
+    visibility: hidden;
+    opacity: 0;;
+    transition: 0.3s ease-in-out;
+}
+
+.containere .card:hover  .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+  /*!------Final Instrumentos tropicales ----------->*/
+
+
+
+
+
+
+
+/*!------------------------------------------------------------------------------------------->*/
+  /*!------Inicio  Footer ----------->*/
+
+.footer {
+    color: #f006e8;
+    margin-top: 18px;   /*!-- altura del footer -->*/
+    width: 100%;
+    height: 38m;
+    position: absolute;
+}
+  
+  .footer_p {
+    color: #000;
+    text-align: center;
+}
+  
+  .footer_p2 {
+    color: #000;
+    text-align: center;
+}
+  /*!------ Final  Footer ----------->*/
+/*!---------------------------------------------------------------------------------------->*/
+  
+
+  
